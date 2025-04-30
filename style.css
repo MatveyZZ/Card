@@ -1,102 +1,102 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+    margin: 0; /* Убирает отступы по умолчанию у всех элементов */
+    box-sizing: border-box; /* Устанавливает модель коробки, чтобы padding и border входили в ширину и высоту элемента */
 }
 
-html{
-    height: 100%;
+html {
+    height: 100%; /* Устанавливает высоту html-документа на 100% */
 }
 
-body{
-    background-color: #f1f1f1;
-    font-family: "Segoe UI", sans-serif;
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    background-color: #f1f1f1; /* Устанавливает цвет фона для body на светло-серый */
+    font-family: "Segoe UI", sans-serif; /* Устанавливает шрифт для текста на "Segoe UI" с запасным шрифтом sans-serif */
+    min-height: 100%; /* Устанавливает минимальную высоту body на 100% */
+    display: flex; /* Использует flexbox для выравнивания содержимого */
+    align-items: center; /* Выравнивает содержимое по вертикали по центру */
+    justify-content: center; /* Выравнивает содержимое по горизонтали по центру */
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 34rem;
-    width: 90%;
+.container {
+    margin: 0 auto; /* Устанавливает автоматические отступы по бокам для центрирования контейнера */
+    max-width: 34rem; /* Устанавливает максимальную ширину контейнера на 34rem */
+    width: 90%; /* Устанавливает ширину контейнера на 90% от родительского элемента */
 }
 
-input{
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font: inherit;
-    width: auto;
+input {
+    background-color: transparent; /* Устанавливает прозрачный фон для полей ввода */
+    border: none; /* Убирает рамку у полей ввода */
+    color: #fff; /* Устанавливает цвет текста в полях ввода на белый */
+    font: inherit; /* Устанавливает шрифт для полей ввода таким же, как у родительского элемента */
+    width: auto; /* Устанавливает ширину полей ввода на автоматическую (по содержимому) */
 }
 
-input::placeholder{
-    color: #fff;
+input::placeholder {
+    color: #fff; /* Устанавливает цвет текста плейсхолдера (подсказки) в полях ввода на белый */
 }
 
-label{
-    display: block;
+label {
+    display: block; /* Устанавливает метки (label) как блочные элементы, чтобы они занимали всю ширину */
 }
 
-.card{
-    background-color: #171a1c;
-    border-radius: 14px;
-    color: #bebebe;
-    padding: 32px;
+.card {
+    background-color: #171a1c; /* Устанавливает цвет фона карточки на темно-серый */
+    border-radius: 14px; /* Устанавливает радиус скругления углов карточки на 14 пикселей */
+    color: #bebebe; /* Устанавливает цвет текста внутри карточки на светло-серый */
+    padding: 32px; /* Устанавливает внутренние отступы карточки на 32 пикселя */
 }
 
-.header{
-    margin-bottom: 7rem;
+.header {
+    margin-bottom: 7rem; /* Устанавливает нижний отступ для заголовка карточки на 7rem */
 }
 
-.title{
-    color: #fff;
-    float: left;
-    font-size: 1.5rem;
+.title {
+    color: #fff; /* Устанавливает цвет текста заголовка на белый */
+    float: left; /* Выравнивает заголовок влево */
+    font-size: 1.5rem; /* Устанавливает размер шрифта заголовка на 1.5rem */
 }
 
-.logo{
-    float: right;
+.logo {
+    float: right; /* Выравнивает логотип вправо */
 }
 
-.row{
-    margin-bottom: 1.5rem;
+.row {
+    margin-bottom: 1.5rem; /* Устанавливает нижний отступ для каждой строки на 1.5rem */
 }
 
-.content{
-    margin-bottom: 5rem;
+.content {
+    margin-bottom: 5rem; /* Устанавливает нижний отступ для блока содержимого на 5rem */
 }
 
-.content input{
-    outline: none;
+.content input {
+    outline: none; /* Убирает обводку (outline) у полей ввода внутри блока содержимого */
 }
 
-.card-number{
-    font-size: 32px;
+.card-number {
+    font-size: 32px; /* Устанавливает размер шрифта для поля ввода номера карты на 32 пикселя */
 }
 
-.card-expire{
-    float: left;
+.card-expire {
+    float: left; /* Выравнивает блок с датой истечения карты влево */
 }
 
-.card-expire input{
-    font-size: 0.9rem;
+.card-expire input {
+    font-size: 0.9rem; /* Устанавливает размер шрифта для полей ввода даты истечения на 0.9rem */
 }
 
-.card-expire-month{
-    width: 22%;
+.card-expire-month {
+    width: 22%; /* Устанавливает ширину блока для ввода месяца истечения на 22% */
 }
 
-.card-expire-month, .card-expire-year{
-    float: left;
+.card-expire-month, .card-expire-year {
+    float: left; /* Выравнивает блоки для ввода месяца и года истечения влево */
 }
 
-.card-cvv{
-    float: right;
+.card-cvv {
+    float: right; /* Выравнивает блок для ввода CVV-кода вправо */
 }
 
-.card-cvv input{
-    width: 2rem;
-    text-align: center;
-    font-size: 0.9rem;
+.card-cvv input {
+    width: 2rem; /* Устанавливает ширину поля ввода для CVV-кода на 2rem */
+    text-align: center; /* Выравнивает текст внутри поля ввода по центру */
+    font-size: 0.9rem; /* Устанавливает размер шрифта для текста в поле ввода на 0.9rem */
 }
